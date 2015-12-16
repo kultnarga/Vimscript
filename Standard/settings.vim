@@ -6,5 +6,4 @@ set tabstop=4
 set smartindent
 set noswapfile
 set incsearch
-set spell
 
