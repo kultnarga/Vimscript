@@ -6,7 +6,9 @@ function! ChangeKeyAssignment(key,execute_key_command)
 
 function! IncludeVimscript(path,filename)
 		let s:include_command = "source " . a:path . a:filename
+if filereadable(a:path . a:filename)
 		execute s:include_command
+		endif
 		endfunction
 
 
