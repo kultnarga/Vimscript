@@ -26,4 +26,9 @@ let g:file_type = "Vimscript"
 call IncludeVimscriptInDirectory(g:my_runtime_path."../" . g:file_type ."/")
 endif
 
+if expand("%:e") == "html"
+let g:file_type = "Html"
+call IncludeVimscriptInDirectory(g:my_runtime_path."../" . g:file_type ."/")
+endif
+
 call IncludeVimscriptInDirectory(g:my_runtime_path."../Standard/")
